@@ -69,7 +69,7 @@ header .toggle-btn:before{
 
 header .head-menu{
     margin: 0;
-    float: left;
+    float: right;
 }
 header .head-menu li{
     float: left;
@@ -141,7 +141,7 @@ header .head-menu li.active a{
 
 /* -- 页面内容区 */
 .docs-content{
-    padding: 50px 0;
+    padding-top: 25px;
 }
 
 .docs-content section{
