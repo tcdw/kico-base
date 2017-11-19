@@ -36,21 +36,6 @@ function navtrans() {
     }
 }
 
-// 遮罩示例
-function overlay_test_a() {
-    overlay(3000);
-}
-
-function alert_test_a() {
-    alert_box("这是一个弹窗测试", 1000);
-}
-function alert_test_b() {
-    alert_box("这是一个弹窗测试", 1000, false);
-}
-function alert_test_c() {
-    alert_box("这是一个弹窗测试", 1000, true, "green");
-}
-
 // 页面滚动事件
 window.onscroll = function () {
     navtrans();
