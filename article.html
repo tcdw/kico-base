@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>开始 - Kico Style</title>
+    <meta name="theme-color" content="#3498db">
+    <link href="css/doc.css" rel="stylesheet" type="text/css"/>
+    <link href="css/blog.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
+</head>
+<body>
+<header>
+    <div class="wrap min">
+        <div class="head-title">
+            <h3 class="site-title">Kico Style</h3>
+            <div class="toggle-btn"></div>
+        </div>
+        <ul class="head-menu">
+            <li class="active"><a href="index.html">开始</a></li>
+            <li><a href="style.html">全局样式</a></li>
+            <li><a href="components.html">附加组件</a></li>
+            <li><a href="animation.html">动画与特效</a></li>
+            <li><a href="https://www.binkic.com" target="_blank">缤奇官网</a></li>
+        </ul>
+    </div>
+</header>
+<main class="container">
+    <div class="docs-title">
+        <div class="wrap min">
+            <h1>开始</h1>
+            <p><time>12345678 年前</time></p>
+        </div>
+    </div>
+    <div class="docs-content">
+        <div class="wrap min article-block">
+            <section id="start">
+                <div class="section-content">
+                    <p>为了在 macOS 上使用 TiMidity++，并用上还行的 GUI，我自己动手编译了一个。</p>
+                    <p>为什么要编译呢？Homebrew 提供的二进制，什么 UI 都没编译进去！</p>
+                    <h2>过程</h2>
+                    <ol>
+                        <li>安装
+                            <a href="https://www.xquartz.org/">XQuartz</a> 和 Xcode 命令行工具</li>
+                        <li>下载 TiMidity++
+                            <a href="https://sourceforge.net/projects/timidity/files/latest/download">源代码</a>，并解压</li>
+                        <li>在终端里切换到 TiMidity++ 源代码所在目录，执行命令</li>
+                    </ol>
+                    <pre><code class="language-bash">./configure \
+--with-x \
+--x-includes=/opt/X11/include \
+--x-libraries=/opt/X11/lib \
+--enable-xaw
+make -j6
+make install</code></pre>
+                    <p>编译完成后，我们编辑下
+                        <code>/usr/local/share/timidity/timidity.cfg</code>，添加上你喜欢的波表文件，例如：</p>
+                    <pre><code>soundfont &quot;/Users/tcdw/MIDI/_soundfont/GeneralUser GS v1.471.sf2&quot;</code></pre>
+                    <p>打开 XQuartz，在上侧菜单选择 应用程序 =&gt; 自定，把我们的 TiMidity++ 加进去；命令是
+                        <code>timidity -ia</code>。</p>
+                    <p>
+                        <img src="//tcdwcdn.b0.upaiyun.com/files/x11-app-list.png" alt="X11 应用列表">
+                    </p>
+                    <p>以后就可以从 XQuartz 的“应用程序”栏目启动有 GUI 的 TiMidity++ 啦。</p>
+                    <p>
+                        <img src="//tcdwcdn.b0.upaiyun.com/files/timidity-running.png" alt="TiMidity++ 运行中">
+                    </p>
+                    <h2>升级</h2>
+                    <p>重复一遍此步骤即可。</p>
+                    <p>（不过貌似没啥好升级的，因为这玩意更新极不频繁！！！但是V大深V的vfhgjfhytf的深V三个人高人体好酷玉桃园如果换个马甲和他的人格2发给你很过分vfbccvcbgfvngfhfvfgnfgfcb</p>
+                </div>
+            </section>
+        </div>
+        <div class="wrap min article-comment">评论框区域</div>
+    </div>
+</main>
+<footer>
+    <p>© 2017 By <a href="https://hi-paul.space" title="保罗的博客" target="_blank">Dreamer-Paul</a>.</p>
+</footer>
+
+<script src="js/docs.js"></script>
+<script src="js/binkic.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>

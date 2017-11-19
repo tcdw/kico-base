@@ -1,5 +1,29 @@
+* {
+    letter-spacing: 0.04em;
+}
+
+body {
+    background-color: #3498db;
+}
+
+.container {
+    background-color: #FFF;
+}
+
 .article-block {
     padding-bottom: 2.3em;
+}
+
+.article-info {
+    color: #999;
+}
+
+.section-content {
+    line-height: 1.66em;
+}
+
+.page-nav {
+    padding-bottom: 60px;
 }
 
 .nav-link {
@@ -24,14 +48,6 @@
     float: right
 }
 
-.page-nav {
-    padding-bottom: 60px;
-}
-
-.section-content {
-    line-height: 1.66em;
-}
-
-* {
-    letter-spacing: 0.04em;
+.article-comment {
+    padding-bottom: 2.2em;
 }

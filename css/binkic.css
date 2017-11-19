@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 1rem;
 }
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child{
-    margin-bottom: 0;
+    margin-bottom: 0.2em;
 }
 
 img{
@@ -108,7 +108,7 @@ a, h1, h2, h3, h4, h5, h6, .btn{
 /* - 代码*/
 pre, code{
     font-size: 1em;
-    font-family: 'Consolas', 'Courier New', monospace, "微软雅黑";
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace, "微软雅黑";
 }
 
 code{
@@ -126,6 +126,11 @@ pre{
     overflow-x: auto;
     border-radius: 5px;
     background: #333333;
+}
+
+pre code{
+    background: #333;
+    color: #fff;
 }
 
 pre::-webkit-scrollbar-track-piece{
